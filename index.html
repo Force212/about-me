@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Хедер -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Кондря Никита Андреевич</h1>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Секция "Обо мне" -->
+        <section class="section" id="about">
+            <h2>Обо мне</h2>
+            <p>Мне 17 лет, ушел со школы после 9 класса и на данный момент имею основное общее образование. Обучаюсь в колледже по специальности "Информационные системы и программирование",
+              планирую пойти в университет по этой же специальности.</p>
+        </section>
+
+        <!-- Секция "Проекты" -->
+        <section class="section" id="projects">
+            <h2>Проекты</h2>
+            <!-- <ul>
+                <li><a href="#">Сайт портфолио</a></li>
+                <li><a href="#">Тестовый блог</a></li>
+                <li><a href="#">Игра на JavaScript</a></li>
+            </ul> -->
+        </section>
+
+        <!-- Секция "Контакты" -->
+        <section class="section" id="contacts">
+            <h2>Контакты</h2>
+            <p> Я в <a href="https://github.com/Force212">GitHub</a></p>
+            <p>Email: <a href="nikitakondrya@gmail.com"> nikitakondrya@gmail.com</p>
+        </section>
+    </main>
+
+    <!-- JavaScript для изменения фона -->
+    <script>
+        // Изменение фона
+        function changeBackground(background) {
+            document.querySelector('.site-header').style.background = background;
+            localStorage.setItem('headerBackground', background);
+        }
+
+        // Загрузка сохраненного фона
+        window.onload = () => {
+            const savedBackground = localStorage.getItem('headerBackground');
+            if (savedBackground) {
+                document.querySelector('.site-header').style.background = savedBackground;
+            }
+        };
+    </script>
+</body>
+</html>
