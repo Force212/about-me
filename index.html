@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Хедер -->
-    <header class="site-header">
-        <div class="header-content">
-            <h1>Кондря Никита Андреевич</h1>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container">
+      <h1>Кондря Никита</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Раздел "Обо мне" -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>Привет, я Никита</h2>
+      <p class="subtitle">Мне 17 лет, на данный момент имею основное общее образование. Обучаюсь в колледже по специальности "Информационные системы и программирование",
+        планирую пойти в университет по этой же специальности.</p>
+    </div>
+    <div class="skills">
+        <h3>Мои ключевые навыки:</h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <i class="fas fa-code"></i>
+            <span>HTML</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-paint-brush"></i>
+            <span>CSS</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+          </div>
         </div>
-    </header>
+      </div>
+  </section>
 
-    <!-- Основной контент -->
-    <main>
-        <!-- Секция "Обо мне" -->
-        <section class="section" id="about">
-            <h2>Обо мне</h2>
-            <p>Мне 17 лет, на данный момент имею основное общее образование. Обучаюсь в колледже по специальности "Информационные системы и программирование",
-              планирую пойти в университет по этой же специальности.</p>
-        </section>
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Мои проекты</h2>
+      <div class="project-card">
+        <!-- Фото проекта -->
+        <a href="https://force212.github.io/Tic-Tac-Toe/" target="_blank">
+            <img src="img/image.png" alt="Описание проекта" class="project-image">
+          </a>
+        <!-- Заголовок и описание -->
+        <h3>Крестики нолики</h3>
+        <p class="project-description">
+            Простая, но увлекательная игра "Крестики-нолики". Реализована с использованием современных технологий и адаптирована для мобильных устройств. 
+            В проекте используется HTML, CSS и JavaScript.
+        </p>
+        
+        <!-- Кнопка для перехода на другой сайт -->
+        <a href="https://force212.github.io/Tic-Tac-Toe/" target="_blank" class="project-link">Перейти на сайт</a>
+      </div>
+    </div>
+  </section>
 
-        <!-- Секция "Проекты" -->
-        <section class="section" id="projects">
-            <h2>Проекты</h2>
-            <!-- <ul>
-                <li><a href="#">Сайт портфолио</a></li>
-                <li><a href="#">Тестовый блог</a></li>
-                <li><a href="#">Игра на JavaScript</a></li>
-            </ul> -->
-        </section>
+  <!-- Раздел "Контакты" -->
+  <section class="section" id="contacts">
+    <h2>Контакты</h2>
+    <p> Я в <a href="https://github.com/Force212">GitHub</a></p>
+    <p>Email: <a href="nikitakondrya@gmail.com"> nikitakondrya@gmail.com </a></p>
+</section>
 
-        <!-- Секция "Контакты" -->
-        <section class="section" id="contacts">
-            <h2>Контакты</h2>
-            <p> Я в <a href="https://github.com/Force212">GitHub</a></p>
-            <p>Email: <a href="nikitakondrya@gmail.com"> nikitakondrya@gmail.com</p>
-        </section>
-    </main>
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Кондря Никита Андреевич. Все права защищены.</p>
+    </div>
+  </footer>
 
-    <!-- JavaScript для изменения фона -->
-    <script>
-        // Изменение фона
-        function changeBackground(background) {
-            document.querySelector('.site-header').style.background = background;
-            localStorage.setItem('headerBackground', background);
-        }
-
-        // Загрузка сохраненного фона
-        window.onload = () => {
-            const savedBackground = localStorage.getItem('headerBackground');
-            if (savedBackground) {
-                document.querySelector('.site-header').style.background = savedBackground;
-            }
-        };
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
