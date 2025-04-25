@@ -124,36 +124,13 @@
     margin-top: 2rem;
   }
   
-  .skills h3 {
+.skills h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #ff6f61;
-    transition: transform 0.3s ease;
-  }
-  
-  .skill-item:hover {
-    transform: scale(1.1);
-  }
-  
-  .skill-item i {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .skill-item span {
-    font-size: 1rem;
-    color: #ccc;
-  }
+.icon {
+    width: 100px; /* Уменьшаем ширину */
+    height: 100px; /* Уменьшаем высоту */
+    margin: 5px; /* Добавляем немного отступов */
+}
