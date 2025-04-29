@@ -20,8 +20,8 @@
   }
   
   .header {
-    background-color: #2d2d2d;
-    padding: 2rem 0;
+    background-color: #474747;
+    padding: 1.5rem 0;
     text-align: center;
   }
   
@@ -73,7 +73,7 @@
   
  /* Стили для карточки проекта */
 .project-card {
-    background-color: #2d2d2d;
+    background-color: #474747;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -88,6 +88,20 @@
   .project-image {
     width: 100%;
     max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .project-image1 {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .project-image2 {
+    width: 100%;
+    max-width: 800px;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -115,8 +129,8 @@
   }
   
   .footer {
-    background-color: #1e1e1e;
-    padding: 2rem 0;
+    background-color: #474747;
+    padding: 1.5rem 0;
     text-align: center;
   }
   /* Стили для блока скиллов */
@@ -133,9 +147,4 @@
     width: 100px; /* Уменьшаем ширину */
     height: 100px; /* Уменьшаем высоту */
     margin: 5px; /* Добавляем немного отступов */
-}
-svg {
-  width: 100px;
-  height: 100px;
-  fill: #E34F26; /* Цвет заливки */
 }
